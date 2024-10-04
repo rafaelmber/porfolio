@@ -1,0 +1,27 @@
+.header {
+  background-color: var(--primary-accent);
+  padding: 16px;
+  color: var(--neutral-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header > nav {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
+  .header nav {
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+  }
+}
