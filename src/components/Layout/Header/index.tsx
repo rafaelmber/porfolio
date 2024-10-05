@@ -1,15 +1,19 @@
+import Link from 'next/link';
+
 import styles from './styles.module.css';
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <h1>Rafael Martinez</h1>
+      <h1>
+        <Link href='/'>Rafael Martinez</Link>
+      </h1>
       <nav>
         <span>
-          <a href='#projects'>My Projects</a>
+          <Link href='/#projects'>My Projects</Link>
         </span>
         <span>
-          <a href='#about'>About me</a>
+          <Link href='/#about'>About me</Link>
         </span>
         <span>Contact me</span>
       </nav>

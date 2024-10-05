@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import ProductCard from '@/components/ProjectCard';
 import Wrapper from '@/components/Layout/Wrapper';
@@ -43,7 +44,7 @@ export default function Home() {
           <ul className={styles.skills_list}>
             <li>React</li>
             <li>Python</li>
-            <li>Microcontroller Programming</li>
+            <li>Micro-controller Programming</li>
             <li>Data Science</li>
             <li>Frontend Development</li>
             <li>Electronics</li>
@@ -57,7 +58,9 @@ export default function Home() {
           <ProductCard />
           <ProductCard />
         </div>
-        <button className={styles.primary_button}>More Projects</button>
+        <Link href='/projects' className={styles.primary_button}>
+          More Projects
+        </Link>
       </section>
     </Wrapper>
   );
