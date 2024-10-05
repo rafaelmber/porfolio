@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from './styles.module.css';
 
 export default function Footer() {
@@ -18,13 +20,13 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href='#about'>About</a>
+              <Link href='/#about'>About</Link>
             </li>
             <li>
-              <a href='#projects'>Projects</a>
+              <Link href='/projects'>Projects</Link>
             </li>
             <li>
-              <a href='#contact'>Contact</a>
+              <Link href='/#about'>Contact</Link>
             </li>
           </ul>
         </div>
